@@ -1,0 +1,41 @@
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+mkdir /var/www/html
+echo 'Hey!! This is my First Website on EC2 server1!' > /var/www/html/index.html
+
+
+
+
+
+
+
+
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+mkdir /var/www/html
+echo 'Hey!! This is my First Website on EC2 server2!' > /var/www/html/index.html
+
+
+
+
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+mkdir /var/www/html
+echo 'Hey!! This is my First Website on EC2 with autoscaling!' > /var/www/html/index.html
+
+
+
+
+#!/bin/bash
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+mkdir /var/www/html
+echo 'Hey!! This is my First Website on EC2 with R53 !!' > /var/www/html/index.html
+
